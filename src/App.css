@@ -1,0 +1,473 @@
+/* App.css */
+
+/* Global styles for techy theme */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.app-container {
+  padding: 20px 10%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, li, span {
+  color: #ffffff;
+  letter-spacing: 1.5px;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+button, a {
+  color: #0f2027;
+  background-color: #15a7ff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 700;
+  cursor: crosshair;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 0 8px #15a7ff;
+  animation: pulseGlow 3s infinite alternate;
+}
+
+button:hover, a:hover {
+  background-color: #0b8ae6;
+  color: #fff;
+}
+
+@keyframes pulseGlow {
+  0% {
+    box-shadow: 0 0 8px #15a7ff;
+  }
+  100% {
+    box-shadow: 0 0 20px #0b8ae6;
+  }
+}
+
+.section {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 500px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  box-shadow: 0 8px 16px rgba(21, 167, 255, 0.15);
+  border-radius: 10px;
+}
+
+.section-title {
+  color: #00ffff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 2px;
+}
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.form-input {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #4ee3c4;
+  background-color: #12232e;
+  color: #c1f0e8;
+  font-family: 'Orbitron', sans-serif;
+  transition: border-color 0.3s ease;
+  cursor: crosshair;
+}
+
+.form-input:focus {
+  outline: 2px solid #00ffe7;
+  outline-offset: 2px;
+  border-color: #15a7ff;
+  box-shadow: 0 0 8px #15a7ff;
+}
+
+.input-error {
+  border-color: #ff4d4f;
+}
+
+.error-text {
+  color: #ff4d4f;
+  font-size: 0.8rem;
+  margin-top: 3px;
+}
+
+.submit-button {
+  background-color: #15a7ff;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: crosshair;
+  box-shadow: 0 4px 12px rgba(21, 167, 255, 0.3);
+  font-family: 'Orbitron', sans-serif;
+  transition: background-color 0.3s ease;
+  animation: pulseGlow 3s infinite alternate;
+}
+
+.submit-button:hover {
+  background-color: #0b8ae6;
+}
+
+.submitted-message {
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+button:focus, .form-input:focus, a:focus {
+  outline: 2px solid #00ffe7;
+  outline-offset: 2px;
+}
+
+.countdown-section {
+  text-align: center;
+  margin: 100px 10%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.countdown-section .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  color: #00ffff;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.countdown-timer {
+  font-weight: 800;
+  font-size: 3rem;
+  color: #00ffe7;
+  background: #0d1b2a;
+  padding: 20px 40px;
+  border-radius: 10px;
+  letter-spacing: 0.15em;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #00ffe7;
+  box-shadow: 0 0 10px rgba(0, 255, 231, 0.2);
+  text-shadow: 1px 1px 2px #000;
+  min-width: 300px;
+}
+
+.speakers-section {
+  margin: 40px 10%;
+  padding: 30px;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(78, 227, 196, 0.15);
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #ffffff;
+}
+
+.speakers-section .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #00ffff;
+}
+
+.speakers-section .section-text {
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* About Section Styling */
+.about-section {
+  padding: 50px 10%;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(21, 167, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+.about-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(21, 167, 255, 0.25);
+}
+
+.about-container h2 {
+  text-align: center;
+  color: #00ffff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #e0f7fa;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.about-container strong {
+  color: #00ffe7;
+  font-weight: 700;
+}
+
+.about-container em {
+  font-style: italic;
+  color: #ffd700;
+}
+.highlights-section {
+  padding: 50px 10%;
+  background: linear-gradient(135deg, #203a43, #2c5364, #0f2027);
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 255, 231, 0.15);
+  margin: 40px auto;
+  max-width: 900px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlights-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 255, 231, 0.3);
+}
+
+.highlights-container h2 {
+  text-align: center;
+  color: #00ffff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.highlights-container ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #e0f7fa;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.highlights-container ul li {
+  margin-bottom: 12px;
+}
+/* Schedule.css */
+/* Schedule.css - Techy Dark Theme Match */
+
+/* Container for the entire schedule section */
+.schedule-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px 30px;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(21, 167, 255, 0.25);
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
+}
+
+/* Title of the Schedule Section */
+.schedule-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #00ffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 8px #15a7ff;
+}
+
+/* Each day container */
+.schedule-day {
+  margin-bottom: 40px;
+}
+
+/* Day heading */
+.schedule-day h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #00e0ff;
+  border-bottom: 3px solid #15a7ff;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  text-shadow: 0 0 6px #15a7ff;
+}
+
+/* Venue info under each day */
+.schedule-venue {
+  font-style: italic;
+  font-size: 1rem;
+  color: #81d8f7;
+  margin-bottom: 20px;
+  text-shadow: 0 0 4px #0b8ae6;
+}
+
+/* Table styling */
+.schedule-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 10px;
+  background-color: #12232e;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(21, 167, 255, 0.2);
+}
+
+/* Table header row */
+.schedule-table thead tr {
+  background-color: #0b8ae6;
+}
+
+.schedule-table thead th {
+  padding: 12px 15px;
+  font-weight: 700;
+  text-align: left;
+  color: #e0f7fa;
+  border-bottom: 2px solid #15a7ff;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 5px #00ffe7;
+}
+
+/* Table body rows */
+.schedule-table tbody tr:nth-child(even) {
+  background-color: #203a43;
+}
+
+.schedule-table tbody tr:hover {
+  background-color: #15a7ff;
+  color: #0f2027;
+  transition: background-color 0.3s ease;
+  cursor: default;
+  box-shadow: 0 0 12px #15a7ff;
+}
+
+/* Table body cells */
+.schedule-table tbody td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #0b8ae6;
+  vertical-align: top;
+  font-size: 1rem;
+  color: #b4f0f9;
+  letter-spacing: 0.02em;
+}
+
+/* Notes at the bottom */
+.schedule-notes {
+  margin-top: 30px;
+  background-color: #0b8ae6;
+  padding: 15px 20px;
+  border-left: 5px solid #00ffe7;
+  font-size: 1rem;
+  color: #0f2027;
+  font-style: normal;
+  line-height: 1.5;
+  box-shadow: 0 0 10px #00ffe7;
+  border-radius: 6px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .schedule-container {
+    padding: 15px 20px;
+    margin: 20px 15px;
+  }
+
+  .schedule-title {
+    font-size: 2rem;
+  }
+
+  .schedule-table thead {
+    display: none; /* Hide header for small screens */
+  }
+
+  .schedule-table tbody td {
+    display: block;
+    width: 100%;
+    padding: 10px 10px;
+    border-bottom: 1px solid #0b8ae6;
+    color: #00e0ff;
+  }
+
+  .schedule-table tbody tr {
+    margin-bottom: 20px;
+    border: 1px solid #15a7ff;
+    border-radius: 6px;
+    background-color: #0f2027;
+    box-shadow: 0 0 8px #15a7ff;
+  }
+}
+.speakers-section {
+  margin: 40px auto;
+  padding: 30px 30px;
+  max-width: 900px;
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(21, 167, 255, 0.25);
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.speakers-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(21, 167, 255, 0.35);
+}
+
+.speakers-section .section-title {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #00ffff;
+  text-shadow: 0 0 8px #15a7ff;
+}
+
+.speakers-section .section-text {
+  font-size: 1.1rem;
+  color: #b4f0f9;
+  line-height: 1.6;
+  text-shadow: 0 0 5px #00ffe7;
+}
