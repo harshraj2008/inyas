@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import './App.css';
 
 import Header from './components/Header';
+import Hero from './components/Hero';
 import About from './components/About';
 import Highlights from './components/Highlights';
 import Speakers from './components/Speakers';
@@ -26,59 +27,25 @@ function App() {
   return (
     <div className="app-root">
       <Header />
+      <Hero />
 
-      <motion.section
-        id="about"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={sectionVariants}
-        className="section"
-      >
+      <motion.section id="about" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} variants={sectionVariants} className="section">
         <About />
       </motion.section>
 
-      <motion.section
-        id="highlights"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={sectionVariants}
-        className="section"
-      >
+      <motion.section id="highlights" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} variants={sectionVariants} className="section">
         <Highlights />
       </motion.section>
 
-      <motion.section
-        id="speakers"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={sectionVariants}
-        className="section"
-      >
+      <motion.section id="speakers" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} variants={sectionVariants} className="section">
         <Speakers />
       </motion.section>
 
-      <motion.section
-        id="registration"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
-        variants={sectionVariants}
-        className="section"
-      >
+      <motion.section id="registration" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} variants={sectionVariants} className="section">
         <Registration />
       </motion.section>
 
-      <motion.section
-        id="schedule"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.05 }}
-        variants={sectionVariants}
-        className="section"
-      >
+      <motion.section id="schedule" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.05 }} variants={sectionVariants} className="section">
         <Schedule />
       </motion.section>
 

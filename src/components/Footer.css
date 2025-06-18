@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Allows wrapping on small screens */
   gap: 3rem;
   margin-bottom: 1.5rem;
 }
@@ -66,7 +66,8 @@
 @media (max-width: 600px) {
   .footersec1 {
     gap: 2rem;
-    flex-direction: column;
+    flex-wrap: wrap; /* Keep items horizontal but allow wrapping */
+    justify-content: center;
   }
 
   .footersec2 {
