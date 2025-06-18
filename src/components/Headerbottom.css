@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.headerbottom-navbar {
+  position: fixed;
+  top: 4.2rem;
+  width: 100vw;
+  background: linear-gradient(90deg, #004466, #006699);
+  font-family: 'Poppins', sans-serif;
+  z-index: 999;
+  box-sizing: border-box;
+  height: 3.6rem; /* Default height for desktop */
+}
+
+.headerbottom-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+.nav-links {
+  display: flex;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  flex: 1; /* Equal width for each item */
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-links li:first-child {
+  border-left: none; /* Remove left border from first */
+}
+
+.nav-links li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 0.8rem 0;
+  transition: background 0.3s ease;
+  white-space: nowrap;
+}
+
+.nav-links li a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+/* 🔧 Responsive tweaks for mobile */
+@media (max-width: 768px) {
+.nav-links li {
+  flex: 1; /* Equal width for each item */
+  text-align: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+      height: 4.4rem; /* More height on mobile */
+
+}
+  .nav-links li a {
+    font-size: 14px;
+    padding: 1rem 0; /* More padding vertically */
+  }
+}

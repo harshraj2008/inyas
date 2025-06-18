@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+.Headertop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.2rem; /* Explicit height helps spacing with next section */
+  z-index: 1000;
+  background-color: rgb(205, 238, 255);
+  font-family: 'Poppins', sans-serif;
+  border-bottom: 1px solid rgb(0, 70, 105);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Title inside Headertop */
+.headertop-title {
+  text-align: center;
+  max-width: 90%;
+}
+
+.main-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+  color: rgb(0, 70, 105);
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  margin: 0;
+  color: rgb(0, 70, 105);
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 800px) {
+  .Headertop {
+    padding: 0.5rem 1rem;
+    height: auto; /* Let height adjust if content stacks */
+  }
+
+  .main-title {
+    font-size: 1.3rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+}
