@@ -59,11 +59,10 @@
   flex: 1; /* Equal width for each item */
   text-align: center;
   border-left: 1px solid rgba(255, 255, 255, 0.5);
-      height: 4.4rem; /* More height on mobile */
-
+height: 3.5rem ;
 }
   .nav-links li a {
-    font-size: 14px;
+    font-size: 10px;
     padding: 1rem 0; /* More padding vertically */
   }
 }

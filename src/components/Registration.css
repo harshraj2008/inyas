@@ -1,50 +1,72 @@
+/* Container that wraps the form */
+.container {
+  max-width: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 
-
-
+/* Registration Form Layout */
 .registration-form {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
+/* Grouping for label + input */
 .form-group {
   display: flex;
   flex-direction: column;
 }
 
+/* Label Styling */
 .form-label {
   font-weight: 500;
   margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
 }
 
+/* Required Asterisk */
 .required {
   color: #c0392b;
   margin-left: 4px;
 }
 
+/* Input Field Styling */
 .form-input {
   padding: 0.7rem 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 1rem;
+  width: 100%;
 }
 
+/* Error Border */
 .input-error {
   border-color: #c0392b;
   background-color: #fff5f5;
 }
 
+/* Error Message Text */
 .error-text {
   color: #c0392b;
   font-size: 0.875rem;
   margin-top: 0.25rem;
 }
 
+/* Button Container */
 .form-actions {
   display: flex;
   justify-content: center;
 }
 
+/* Submit Button */
 .submit-button {
   background-color: #2c3e50;
   color: white;
@@ -56,6 +78,25 @@
   transition: background-color 0.3s ease;
 }
 
+/* Hover Effect */
 .submit-button:hover {
   background-color: #1a252f;
+}
+
+/* --- MOBILE RESPONSIVENESS --- */
+@media screen and (max-width: 600px) {
+  .registration-form {
+    padding: 0 0.5rem;
+  }
+
+  .submit-button {
+    width: 100%;
+    font-size: 0.95rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .form-input {
+    font-size: 0.95rem;
+    padding: 0.65rem 0.9rem;
+  }
 }
