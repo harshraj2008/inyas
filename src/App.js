@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import './App.css';
 
@@ -23,12 +24,11 @@ const sectionVariants = {
   }
 };
 
-function App() {
+function HomePage() {
   return (
-    <div className="app-root">
+    <>
       <Header />
       <Hero />
-
       <div className="container">
         <motion.section id="about" initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.1 }} variants={sectionVariants} className="section">
           <About />
@@ -54,7 +54,17 @@ function App() {
       <div className="full-width">
         <Footer />
       </div>
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
   );
 }
 
