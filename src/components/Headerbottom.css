@@ -59,13 +59,15 @@
 /* Mobile adjustments */
 @media (max-width: 768px) {
   .headerbottom-navbar {
-    top: 6.2rem; /* Accounts for Headertop auto height on mobile */
-    height: 2.2rem;
+    top: 6.5rem; /* Accounts for Headertop auto height on mobile */
+    height: 3.2rem;
+    bottom: 0 rem ;
   }
 
   .nav-links li a {
-    font-size: 0.7rem;
-    padding: 0 4px;
-    height: 2.2rem;
+    bottom: 10%;
+    font-size: 0.5rem;
+    padding: 0 2.5px;
+    height: 3.2rem;
   }
 }
