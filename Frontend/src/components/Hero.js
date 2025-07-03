@@ -14,8 +14,7 @@ function Hero() {
       {/* Overlay and Content */}
       <div className="hero-overlay">
         <div className="hero-content">
-          <img src="Inyas_logo.png" alt="INYAS Logo" className="hero-logo" />
-          <img src="vit_white.png" alt="VIT Logo" className="hero-logo" />
+          
 
           <h1>Advances in Science and Technology for Sustainable Future (ASTSF)</h1>
           <p>
@@ -29,8 +28,11 @@ function Hero() {
           <p className="hero-date">November 24–25, 2023</p>
           <p className="hero-location">VIT Vellore, Tamil Nadu, India</p>
           <p className="hero-description">
+                   <img src="Inyas_logo.png" alt="INYAS Logo" className="hero-logo" />
+          <img src="vit_white.png" alt="VIT Logo" className="hero-logo" />
             <img src="INSA.png" alt="INSA Logo" className="hero-logo" />
             <img src="chapter_logo.png" alt="PELS Logo" className="hero-logo" />
+     
           </p>
           <a href="#registration" className="hero-button">Register Now</a>
         </div>
